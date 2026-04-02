@@ -2,31 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Website</title>
+<title>Your Name</title>
 
 <style>
-body{
-    font-family: Inter, sans-serif;
-    background:#4e0202;
-    color:#eee;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:100vh;
-    margin:0;
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    line-height: 1.6;
 }
 
-.container{
-    text-align:center;
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
 }
 
-h1{
-    font-size:48px;
-    margin-bottom:10px;
+/* Заголовок */
+header {
+    margin-bottom: 60px;
 }
-п
-p{
-    color:#aaa;
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Секции */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ccc;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Текст */
+p {
+    color: #bbb;
+}
+
+/* Ссылки */
+a {
+    color: #e6e6e6;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+a:hover {
+    border-bottom: 1px solid #aaa;
+}
+
+/* Списки */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Футер */
+footer {
+    margin-top: 60px;
+    font-size: 12px;
+    color: #666;
 }
 </style>
 
@@ -35,8 +91,61 @@ p{
 <body>
 
 <div class="container">
-<h1>Hi, I'm mNwoK</h1>
-<p>This is my personal website</p>
+
+<header>
+    <h1>Your Name</h1>
+    <div class="subtitle">Aspiring Financial Analyst</div>
+</header>
+
+<section>
+    <h2>About</h2>
+    <p>
+        Brief introduction about yourself. 
+        Mention your interest in finance, markets, and analysis.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Project Name</strong> — short description  
+            (<a href="#">link</a>)
+        </li>
+        <li>
+            <strong>Another Project</strong> — description  
+            (<a href="#">link</a>)
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Hobbies</h2>
+    <p>
+        Your hobbies: investing, reading, sports, etc.
+    </p>
+</section>
+
+<section>
+    <h2>CV</h2>
+    <p>
+        <a href="#">Download CV (PDF)</a>
+    </p>
+</section>
+
+<section>
+    <h2>Contacts</h2>
+    <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Telegram</a></li>
+    </ul>
+</section>
+
+<footer>
+    © 2026
+</footer>
+
 </div>
 
 </body>
