@@ -9,6 +9,19 @@
 
 <style>
 
+    /* Определение анимации появления */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 body {
     margin: 0;
     font-family: Inter, sans-serif;
@@ -19,12 +32,14 @@ body {
 /* Основная сетка */
 .wrapper {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 60%;
     min-height: 100vh;
 }
 
 /* Левая панель */
 .sidebar {
+    animation: fadeInUp 0.8s ease-out forwards;
+    
     background: #00356B;
     color: white;
     padding: 60px 40px;
@@ -58,15 +73,23 @@ body {
     text-decoration: none;
     margin-bottom: 10px;
     opacity: 0.8;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .nav a:hover {
     opacity: 1;
+
+    transform: translateY(-4px);
 }
 
 /* Правая часть */
 .content {
     padding: 80px 60px;
+
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    /* Чтобы контент не мелькал до начала анимации */
+    opacity: 0;
 }
 
 /* Секции */
@@ -82,6 +105,8 @@ h2 {
 
 /* Карточки проектов */
 .project {
+    transition: transform 0.3s ease;
+    
     padding: 15px;
     border-left: 3px solid #00356B;
     margin-bottom: 15px;
@@ -90,6 +115,10 @@ h2 {
 .project a {
     color: #00356B;
     text-decoration: none;
+}
+
+.project:hover {
+    transform: scale(1.02); /* Легкое увеличение */
 }
 
 /* Контакты */
